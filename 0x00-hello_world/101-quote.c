@@ -1,8 +1,5 @@
 #include <stdio.h>
-
-/*to compile without warning*/
-#pragma GCC diagnostic push
-#pragma GCC diagnostic ignored "_Wunused-parameter"
+#include <unistd.h>
 /**
  * main - this is the main function
  * Return: returns 1
