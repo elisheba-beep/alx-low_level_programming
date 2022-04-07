@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -c $CFILE -o $CFILE | rev | cut -c 2 | rev | paste -s '.o'
+gcc -c -save-temps $CFILE
