@@ -16,11 +16,11 @@ int main(void)
 	/* your code goes there */
 	if (n > 0)
 	{
-		return("%d is positive\n", n);
+		return("%d is positive\n",n);
 	}
-	else if (n = 0)
+	else if (n == 0)
 	{
-		return("%d is zero\n", n);
+		return("%d is zero\n",n);
 	}
 	else if (n < 0)
 	{
