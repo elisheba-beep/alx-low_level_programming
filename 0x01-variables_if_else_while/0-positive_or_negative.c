@@ -5,7 +5,7 @@
 /* betty style doc for function main goes there */
 /**
 *main: this is the main positive/negative function
-*Return: returns 0
+*Return: returns if n is positive, negative or 0
 */
 int main(void)
 {
@@ -16,15 +16,15 @@ int main(void)
 	/* your code goes there */
 	if (n > 0)
 	{
-		printf("%d is positive\n", n);
+		return("%d is positive\n", n);
 	}
 	else if (n = 0)
 	{
-		printf("%d is zero\n", n);
+		return("%d is zero\n", n);
 	}
 	else if (n < 0)
 	{
-		printf("%d is negative\n", n);
+		return("%d is negative\n", n);
 	}
 	return (0);
 }
