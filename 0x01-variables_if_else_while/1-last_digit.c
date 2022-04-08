@@ -1,9 +1,3 @@
-/**
- * File: 1-last_digit.c
- * Auth: Oluwatomiwa S. Ekwunife
- */
-
-
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
