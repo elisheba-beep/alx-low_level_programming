@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-/** 
+/**
  * main - main function for alphabet
  * Return: returns 0
  */
@@ -13,6 +13,6 @@ int main(void)
 		putchar(ch);
 	}
 	putchar('\n');
-	
+
 	return (0);
 }
