@@ -11,10 +11,9 @@
 
 /* betty style doc for function main goes there */
 /**
- * main - the main last digit function
- *        prints the last digit and tells if its less than 6,
+ * main - prints the last digit and tells if its less than 6,
  *        greater than 5 or 0
- * Return: returns 0
+ * Return : returns 0
  */
 int main(void)
 {
