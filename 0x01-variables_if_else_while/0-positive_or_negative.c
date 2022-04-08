@@ -1,5 +1,6 @@
 /*
  * File: 0-positive_or_negative.c
+ * Auth: Oluwatomiwa S. Ekwunife
  */
 
 #include <stdlib.h>
@@ -9,9 +10,9 @@
 
 /* betty style doc for function main goes there */
 /**
- *main: this is the main positive/negative function
- * prints a number and says if its positive, negative or zero
- *Return: returns 0
+ * main - this is the main positive/negative function
+ *       prints a number and says if its positive, negative or zero
+ * Return: returns 0
  */
 int main(void)
 {
