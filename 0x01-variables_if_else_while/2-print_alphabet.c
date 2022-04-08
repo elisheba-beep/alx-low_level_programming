@@ -1,6 +1,7 @@
 #include <stdio.h>
 
-/** main - main function for alphabet
+/** 
+ * main - main function for alphabet
  * Return: returns 0
  */
 int main(void)
@@ -9,6 +10,7 @@ int main(void)
 
 	for (ch = 'a'; ch <= 'z'; ch++)
 		putchar(ch);
+		putchar('\n');
 	
 	return (0);
 }
