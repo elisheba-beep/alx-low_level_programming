@@ -6,7 +6,8 @@
 /* betty style doc for function main goes there */
 /**
 *main: this is the main positive/negative function
-*Return: returns if n is positive, negative or 0
+* prints a number and says if its positive, negative or zero
+*Return: returns 0
 */
 int main(void)
 {
@@ -20,7 +21,7 @@ int main(void)
 	else if (n < 0)
 		printf("%d is negative\n", n);
 	else
-		printf("%d is zero", n);
+		printf("%d is zero\n", n);
 
 	return (0);
 }
