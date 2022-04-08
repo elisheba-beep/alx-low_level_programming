@@ -9,11 +9,9 @@
 #include <stdio.h>
 /* more headers goes there */
 
-/* betty style doc for function main goes there */
+
 /**
- * main - Prints the last digit of a random number
- * 	  and tells if its less than 6, greater than 5 or 0.
- *
+ * main - Prints the last digit of a random number and tells if its less than 6, greater than 5 or 0.
  * Return : Returns 0.
  */
 int main(void)
