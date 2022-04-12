@@ -9,7 +9,7 @@
  */
 void print_times_table(int n)
 {
-	int i = o;
+	int i = 0;
 
 	while (i < 10)
 	{
