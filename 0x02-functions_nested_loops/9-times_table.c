@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <unistd.h>
 #include "main.h"
 
 /**
@@ -16,7 +15,12 @@ void times_table(void)
 
 		while (j <= 9)
 		{
-			write(1,(i * j), 2);
+			_putchar((i * j) + '0');
+			if ((i * j) > 9)
+			{
+				_putchar(((i * j) / 10) + '0');
+				_putchar(((i * j) % 10) + '0');
+			}
 			_putchar(',');
 			_putchar(' ');
 			j++;
