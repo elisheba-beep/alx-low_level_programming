@@ -7,9 +7,7 @@
  */
 int main(void)
 {
-	char words[]="_putchar";
-
-	putchar(words);
+	write(1, "_putchar", 9);
 	
 	return (0);
 }
