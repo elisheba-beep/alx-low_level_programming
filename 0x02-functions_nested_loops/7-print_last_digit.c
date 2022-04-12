@@ -6,11 +6,9 @@
  * print_last_digit - prints last digit
  * @n: takes in an int n
  *
- * Rreturn: returns the last digit
+ * Return: returns the last digit
  */
 int print_last_digit(int n)
 {
-	int res = n % 10;
-
-	return (res);
+	return (n % 10);
 }
