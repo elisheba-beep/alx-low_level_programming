@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "main.h"
+#include <unistd.h>
 
 /**
  * print_to_98 - prints from any integer to 98
@@ -9,44 +10,33 @@
  */
 void print_to_98(int n)
 {
-	int num;
-
 	if (n < 98)
 	{
-		for(num = n; num <= 98; num++)
+		for(n = n; n <= 98; n++)
 		{
-			if(num > 9)
-			{
-				_putchar((num / 10) + '0');
-				_putchar((num % 10) + '0');
-				_putchar(',');
-				_putchar(' ');
-			}
+			if (n < 98 && n > 9)
+				write(1, "%d, ", n, 4);
+			else if (n < 9 && n > 0)
+				write(1, "%d, ", n, 3);
+			else if (n < 0 && n > -9)
+				write(1, "%d, ", n, 3);
+			else if (n < -9 && n > -99)
+				write(1, "%d, ", n, 4);
 			else
-			{
-				_putchar(num + '0');
-				_putchar(',');
-				_putchar(' ');
-			}
+				write(1, "%d, ", n, 5);
 		}
 	}
-	else 
+	else if (n > 98)
 	{
-		for(num = n; num >= 98; num--)
+		for(n = n; n >= 98; n--)
 		{
-			if(num > 9)
-			{
-				_putchar((num / 10) + '0');
-				_putchar((num % 10) + '0');
-				_putchar(',');
-				_putchar(' ');
-			}
+			if (n == 99)
+				write(1, "%d, ", n, 4);
 			else
-			{
-				_putchar(num + '0');
-				_putchar(',');
-				_putchar(' ');
-			}
+				write(1, "%d, ", n, 5);
 		}
 	}
-}
+	else
+		write(1, "%d", n, 2);
+}	
+		
