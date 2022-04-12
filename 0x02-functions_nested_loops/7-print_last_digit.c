@@ -11,11 +11,6 @@
 int print_last_digit(int n)
 {
 	int res = n % 10;
-	int c = 0;
 
-	while (c < 2)
-	{
-		return (res);
-		c++;
-	}
+	return (res);
 }
