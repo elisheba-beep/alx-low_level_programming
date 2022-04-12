@@ -5,7 +5,7 @@
 
 /**
  * _abs - gets the absolute value
- * @int: takes in an int
+ * @a: takes in an int a
  *
  * Return: returns an int
  */
@@ -18,5 +18,5 @@ int _abs(int a)
 	else
 		a = a;
 
-	return a;
+	return (a);
 }
