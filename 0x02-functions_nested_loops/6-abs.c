@@ -11,7 +11,12 @@
  */
 int _abs(int a)
 {
-	abs (a);
-	
-	return (0);
+	if (a < 0)
+	{
+		a = (-1) * a;
+	}
+	else
+		a = a;
+
+	return a;
 }
