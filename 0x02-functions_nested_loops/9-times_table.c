@@ -15,18 +15,34 @@ void times_table(void)
 
 		while (j <= 9)
 		{
-			if ((i * j) > 9)
+			if (((i * j) % 9) != 0)
 			{
-				_putchar(((i * j) / 10) + '0');
-				_putchar(((i * j) % 10) + '0');
+				if ((i * j) > 9)
+				{
+					_putchar(((i * j) / 10) + '0');
+					_putchar(((i * j) % 10) + '0');
+					_putchar(',');
+				}
+				else
+				{
+					_putchar((i * j) + '0');
+					_putchar(',');
+					_putchar(' ');
+				}
+				_putchar(' ');
 			}
 			else
 			{
-				_putchar((i * j) + '0');
-				_putchar(' ');
+				if ((i * j) > 9)
+				{
+					_putchar(((i * j) / 10) + '0');
+					_putchar(((i * j) % 10) + '0');
+				}
+				else
+				{
+					putchar((i * j) + '0');
+				}
 			}
-			_putchar(',');
-			_putchar(' ');
 			j++;
 		}
 		_putchar('\n');
