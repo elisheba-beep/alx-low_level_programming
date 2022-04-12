@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include "main.h"
-#include <unistd.h>
 
 /**
  * print_to_98 - prints from any integer to 98
@@ -15,15 +14,43 @@ void print_to_98(int n)
 		for(n = n; n <= 98; n++)
 		{
 			if (n < 98 && n > 9)
-				write(1, "%d, ", n, 4);
+			{
+				_putchar((n / 10) + '0');
+				_putchar((n % 10) + '0');
+				_putchar(',');
+				_putchar(' ');
+			}
 			else if (n < 9 && n > 0)
-				write(1, "%d, ", n, 3);
+			{
+				_putchar((n % 10) + '0');
+				_putchar(',');
+				_putchar(' ');
+			}
 			else if (n < 0 && n > -9)
-				write(1, "%d, ", n, 3);
+			{
+				n = (-1) * n;
+				_putchar('-');
+				_putchar((n % 10) + '0');
+				_putchar(',');
+				_putchar(' ');
+			}
 			else if (n < -9 && n > -99)
-				write(1, "%d, ", n, 4);
+			{
+				n = (-1) * n;
+				_putchar('-');
+				_putchar((n / 10) + '0');
+				_putchar((n % 10) + '0');
+				_putchar(',');
+				_putchar(' ');
+			}
 			else
-				write(1, "%d, ", n, 5);
+			{
+				n = (-1) * n;
+				_putchar('-');
+				_putchar((n / 100) + '0');
+				_putchar((n / 10) + '0');
+				_putchar((n % 10) + '0');
+			}
 		}
 	}
 	else if (n > 98)
@@ -31,12 +58,26 @@ void print_to_98(int n)
 		for(n = n; n >= 98; n--)
 		{
 			if (n == 99)
-				write(1, "%d, ", n, 4);
+			{
+				_putchar((n / 10) + '0');
+				_putchar((n % 10) + '0');
+				_putchar(',');
+				_putchar(' ');
+			}
 			else
-				write(1, "%d, ", n, 5);
+			{
+				_putchar((n / 100) + '0');
+				_putchar((n / 10) + '0');
+				_putchar((n % 10) + '0');
+				_putchar(',');
+				_putchar(' ');
+			}
 		}
 	}
-	else
-		write(1, "%d", n, 2);
+	else(n == 98)
+	{
+		_putchar((n / 10) + '0');
+		_putchar((n % 10) + '0');
+	}
 }	
 		
