@@ -12,18 +12,18 @@ int print_sign(int n)
 {
 	if (n > 0)
 	{
-		write (1, '+', 2);
+		write (1, "+", 2);
 		
 		return (1);
 	}
 	else if (n < 0)
 	{
-		write (1, '-', 2);
+		write (1, "-", 2);
 
 		return (-1);
 	}
 	else
-		write (1, '0', 2);
+		write (1, "0", 2);
 		
 		return (0);
 }
