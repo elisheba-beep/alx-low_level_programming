@@ -26,9 +26,9 @@ void print_number(int n)
 		_putchar(n1 / 10 % 10 + '0');
 		_putchar(n1 % 10 + '0');
 	}
-	n1 = n2 % 100000;
 	if (n1 / 10000 % 10 != 0)
 	{
+		n1 = n2 % 100000;
 		_putchar(n1 / 10000 % 10 + '0');
 		_putchar(n1 / 1000 % 10 + '0');
 		_putchar(n1 / 100 % 10 + '0');
