@@ -2,36 +2,36 @@
 #include "main.h"
 
 /**
- * print_number - prints any number ont character at a time
+ * print_number - prints any number one character at a time
  * @n: the number to print
  *
  * Return: void
  */
 void print_number(int n)
 {
+	unsigned int m, d, count;
+
 	if (n < 0)
 	{
-		n = n *= (-1);
-		_putchar('-');
+		_putchar(45);
+		m = n * -1;
 	}
-	if (n >= 0 && n < 10)
-		_putchar((n % 10) + '0');
-	else if (n >= 10 && n < 100)
+	else
 	{
-		_putchar((n / 10) + '0');
-		_putchar((n % 10) + '0');
+		m = n;
 	}
-	else if (n >= 100 && n < 1000)
+
+	d = m;
+	count = 1;
+
+	while (d > 9)
 	{
-		_putchar((n / 100) + '0');
-		_putchar(((n % 100) / 10) + '0');
-		_putchar(((n % 100) % 10) + '0');
+		d /= 10;
+		count *= 10;
 	}
-	else if (n >= 1000 && n < 10000)
+
+	for (; count >= 1; count /= 10)
 	{
-		_putchar((n / 1000) + '0');
-		_putchar(((n % 1000) / 100) + '0');
-		_putchar((((n % 1000) % 100) / 10) + '0');
-		_putchar((((n % 1000) % 100) % 10) + '0');
+		_putchar(((m / count) % 10) + 48);
 	}
 }
