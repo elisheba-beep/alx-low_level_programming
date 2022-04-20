@@ -11,14 +11,13 @@
 void puts_half(char *str)
 {
 	char half;
-	int l, mid, i, k;
+	int l, mid, i;
 
 	l = strlen(str);
 	mid = l / 2;
-	for (i = mid, k = 0; i <= l; i++, k++)
+	for (i = mid, i <= l; i++)
 	{
-		half[k] = str[i];
-		half[k] = '\0';
-
+		half[i] = str[i];
+	half[i] = '\0';
 	printf("%s\n", half);
 }
