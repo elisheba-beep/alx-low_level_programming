@@ -11,13 +11,8 @@
 void puts2(char *str)
 {
 	int i, l;
-	char s;
 
 	l = strlen(str);
-	for (i = 0; i <= l - 1; i+=2)
-	{
-		s = str[i];
-		puts(s);
-	}
-	puts("\n");
+	for (i = 0; i < l; i += 2)
+		puts(str[i]);
 }
