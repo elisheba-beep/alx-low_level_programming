@@ -2,7 +2,8 @@
 #include <string.h>
 #include "main.h"
 
-/** _strcpy - copies a string
+/**
+ * _strcpy - copies a string
  * @dest: one of the characters
  * @scr: the second character
  *
