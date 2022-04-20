@@ -5,7 +5,7 @@
 /**
  * _strcpy - copies a string
  * @dest: one of the characters
- * @scr: the second character
+ * @src: the second character
  *
  * Return: returns the copied character
  */
