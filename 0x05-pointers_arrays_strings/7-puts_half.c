@@ -13,5 +13,5 @@ void puts_half(char *str)
 	int l;
 
 	l = strlen(str);
-	printf ("%.*s\n", l, l, str);
+	printf ("%*.*s\n", l, l, str);
 }
