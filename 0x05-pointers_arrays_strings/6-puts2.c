@@ -13,10 +13,10 @@ void puts2(char *str)
 	int i;
 	char s;
 
-	for (i = 0; i < strlen(str); i +=2)
+	for (i = 0; i <= str.length; i+=2)
 	{
-		_putchar(str[i]);
-		s[i/2] = str[i];
+		s = str[i];
+		puts(s);
 	}
-	printf("%s", s);
+	puts("\n");
 }
