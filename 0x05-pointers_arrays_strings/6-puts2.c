@@ -10,10 +10,11 @@
  */
 void puts2(char *str)
 {
-	int i;
+	int i, l;
 	char s;
 
-	for (i = 0; i <= str.length; i+=2)
+	l = strlen(str);
+	for (i = 0; i <= l - 1; i+=2)
 	{
 		s = str[i];
 		puts(s);
