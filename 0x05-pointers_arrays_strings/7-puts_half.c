@@ -10,14 +10,8 @@
  */
 void puts_half(char *str)
 {
-	char half;
-	int l, mid, i;
+	int l;
 
 	l = strlen(str);
-	mid = l / 2;
-	for (i = mid, i <= l; i++)
-	{
-		half[i] = str[i];
-	half[i] = '\0';
-	printf("%s\n", half);
+	printf ("%.*s\n", l, str);
 }
