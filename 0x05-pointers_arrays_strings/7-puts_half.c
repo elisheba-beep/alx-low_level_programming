@@ -10,8 +10,14 @@
  */
 void puts_half(char *str)
 {
-	int l;
+	char secondHalf;
+	int l, i;
 
 	l = strlen(str);
-	printf ("%*.*s\n", l, l, str);
+	for (i = (l / 2); i <= l; i++)
+	{
+		secondHalf[i] = str[i];
+	}
+	secondHalf[i] = '\0';
+	printf("%.*s\n", l, secondHalf);
 }
