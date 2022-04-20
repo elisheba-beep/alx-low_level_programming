@@ -16,7 +16,9 @@ void puts_half(char *str)
 	l = strlen(str);
 	mid = l / 2;
 	for (i = mid, k = 0; i <= l; i++, k++)
+	{
 		half[k] = str[i];
+		half[k] = '\0';
 
 	printf("%s\n", half);
 }
