@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * _atoi - Converts a string to an integer.
- * @s: The string to be converted.
+ * _atoi - converts a string to int
+ * @s: string
  *
- * Return: The integer value of the converted string.
+ * Return: the int
  */
 int _atoi(char *s)
 {
@@ -20,7 +20,6 @@ int _atoi(char *s)
 
 		else if (num > 0)
 			break;
-
 	} while (*s++);
 
 	return (num * sign);
