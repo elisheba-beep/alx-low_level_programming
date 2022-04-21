@@ -10,15 +10,18 @@
  */
 void print_array(int *a, int n)
 {
-	int a[n];
-	int i;
+	int i, count;
 
-	for (i = 0; i < n; i++)
-		if (i == (n - 1))
+	i = 0;
+	count = 1;
+	if (n < 0)
+	{
+		while (a[i] != '\0' && count < n)
 		{
-			printf("%d", a[i]);
+			print("%d, ", a[i]);
+			i++;
+			count++;
 		}
-		else
-			printf("%d, ", a[i]);
-	printf("\n");
+		printf("%d\n", a[i]);
+	}
 }
