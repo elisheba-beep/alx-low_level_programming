@@ -2,7 +2,8 @@
 #include <string.h>
 #include "main.h"
 
-/** *_strncat - concatenates two strings
+/**
+ * *_strncat - concatenates two strings
  * @dest: character one
  * @src: character two
  * @n: number of characters from src
@@ -11,11 +12,11 @@
  */
 char *_strncat(char *dest, char *src, int n)
 {
-	int i;
-	int j;
+	int i, j, k;
 
 	i = 0;
 	j = 0;
+	k = strlen[src];
 
 	while (dest[i] != '\0')
 		i++;
@@ -25,7 +26,7 @@ char *_strncat(char *dest, char *src, int n)
 		j++;
 		i++;
 	}
-	if (n < (strlen(src))
+	if (n < k)
 		dest[i] = '\0';
 
 	return (dest);
