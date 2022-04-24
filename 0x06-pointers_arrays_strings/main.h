@@ -19,3 +19,5 @@ char *string_toupper(char *s);
 char *leet(char *s);
 
 char *cap_string(char *str);
+
+chr *rot13(char *s);
