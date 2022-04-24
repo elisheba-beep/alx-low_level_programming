@@ -20,4 +20,6 @@ char *leet(char *s);
 
 char *cap_string(char *str);
 
-chr *rot13(char *s);
+char *rot13(char *s);
+
+
