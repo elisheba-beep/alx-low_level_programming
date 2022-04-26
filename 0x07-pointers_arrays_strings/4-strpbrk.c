@@ -3,11 +3,11 @@
 #include <string.h>
 
 /**
- * _strpbrk - searches for a string
- * @s: character
- * @accept: character
+ * _strpbrk - Searches for a string
+ * @s: Character
+ * @accept: Character
  *
- * Return: returns character
+ * Return: Returns character
  */
 char *_strpbrk(char *s, char *accept)
 {
