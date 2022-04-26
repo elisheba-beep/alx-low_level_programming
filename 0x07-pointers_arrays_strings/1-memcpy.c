@@ -3,8 +3,8 @@
 
 /**
  * *_memcpy - copies memory area
- * @*dest: character
- * @*src: character
+ * @dest: character
+ * @src: character
  * @n: number of bytes
  *
  * Return: returns a character
