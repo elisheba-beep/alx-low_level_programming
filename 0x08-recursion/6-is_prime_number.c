@@ -20,4 +20,6 @@ int is_prime_number(int n)
 	if (i * i > n)
 		return 1;
 	i++;
+
 	return is_prime_number(n);
+}
