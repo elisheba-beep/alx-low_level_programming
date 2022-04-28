@@ -11,7 +11,7 @@ int is_prime_number(int n)
 {
 	int i;
 
-	i = 0 + i;
+	i = 2;
 
 	if (n <= 2)
 		return (n == 2) ? 1 : 0;
