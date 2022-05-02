@@ -4,7 +4,7 @@
 /**
  * main - prints the name of this program
  * @argc: the size of array argv[]
- * @argv[]: the array with size argc
+ * @argv: the array with size argc
  *
  * Return: returns 0
  */
