@@ -19,12 +19,6 @@ char *create_array(unsigned int size, char c)
 
 	if (size == 0)
 		return (NULL);
-	while (1)
-	{
-		str = malloc(INT_MAX);
-		if (str == NULL)
-			return (NULL);
-	}
 
 	return (str);
 }
