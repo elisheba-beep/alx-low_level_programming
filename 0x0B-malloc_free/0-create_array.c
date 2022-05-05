@@ -24,6 +24,8 @@ char *create_array(unsigned int size, char c)
 		str = malloc(INT_MAX);
 		if (str == NULL)
 			return (NULL);
+	}
+
 	return (str);
 }
 
