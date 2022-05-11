@@ -1,7 +1,1 @@
-#define ABS(X)
-#if (X < 0)
-	return (X * (-1));
-#else
-	return (X);
-#endif
-	
+#define ABS(x) (x < 0 ? (x * -1) : (x))
