@@ -16,7 +16,6 @@ size_t list_len(const list_t *h)
 
 	for (count = 0; list; count++)
 		list = list->next;
-	char[] result = " elements";
 
-	return (count + result);
+	return (count);
 }
