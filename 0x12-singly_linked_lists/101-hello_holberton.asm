@@ -1,12 +1,13 @@
-.data
-	myvar byte "Hello, Holberton",0
+	global 	main
+	extern 	printf
 
-.code
-main PROC
-	mov edx, offset myvar
-	call writestring
-	exit
-main ENDP
-
-END main
+	section .text
+main:
+	mov	rdi, format
+	mov	rax, 0
+	call	printf
+	mov	rax, 0
+	ret
+format:
+	db "Hello, Holberton", 10, 0
 
