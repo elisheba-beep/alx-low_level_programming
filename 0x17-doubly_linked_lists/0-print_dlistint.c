@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "ists.h"
+#include "lists.h"
 
 /**
  * print_dlistint - prints elements in a dlistint_t
