@@ -1,12 +1,18 @@
 #include "main.h"
+#include <string.h>
 
 /**
- * _strstr - a function
- * @haystack: the haystack
- * @needle: the needle
+ * _strstr - Locates a substring
+ * @haystack: main string
+ * @needle: substring
  *
- * Return: returns a character
+ * Return: Returns a pointer
  */
 char *_strstr(char *haystack, char *needle)
 {
+	char *res;
+
+	res = strstr(haystack, needle);
+
+	return (res);
 }

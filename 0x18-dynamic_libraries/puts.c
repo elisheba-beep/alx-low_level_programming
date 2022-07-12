@@ -1,11 +1,13 @@
+#include <string.h>
 #include "main.h"
 
 /**
- * _puts - puts a character
- * @s: the character
+ * _puts - prints a string followed by a new line
+ * @s: the string to be printed
  *
  * Return: void
  */
 void _puts(char *s)
 {
+	puts(s);
 }

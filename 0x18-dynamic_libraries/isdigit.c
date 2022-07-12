@@ -1,12 +1,16 @@
+#include <ctype.h>
 #include "main.h"
 
 /**
- * _isdigit - checks for a digit
- * @c: the input
+ * _isdigit - checks for digits
+ * @c: takes an integer c
  *
- * Return: returns 0 or 1
+ * Return: returns 1 if its a diit and 0 otherwise
  */
 int _isdigit(int c)
 {
-	return (0);
+	if (isdigit(c))
+		return (1);
+	else
+		return (0);
 }

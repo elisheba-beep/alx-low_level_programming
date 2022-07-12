@@ -1,12 +1,20 @@
+#include <math.h>
 #include "main.h"
 
 /**
- * _abs - gives the absolute of a value
- * @n: the value
+ * _abs - gets the absolute value
+ * @n: takes in an int n
  *
- * Return: returns the absolute value
+ * Return: returns an int
  */
 int _abs(int n)
 {
-	return (0);
+	if (n < 0)
+	{
+		n = (-1) * n;
+	}
+	else
+		n = n;
+
+	return (n);
 }

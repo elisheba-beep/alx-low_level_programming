@@ -1,12 +1,18 @@
+#include <ctype.h>
 #include "main.h"
 
 /**
- * _isalpha - checks if its alphabetical
- * @c: the input
+ * _isalpha - checks for alphabetic character
+ * @c: takes an int c
  *
- * Return: returns 0 or 1
+ * Return: returns 1 if alphabetic and 0 otherwise
  */
 int _isalpha(int c)
 {
-	return (0);
+	if (isalpha(c))
+	{
+		return (1);
+	}
+	else
+		return (0);
 }

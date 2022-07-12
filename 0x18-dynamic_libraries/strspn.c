@@ -1,13 +1,18 @@
 #include "main.h"
+#include <string.h>
 
 /**
- * _strspn - a function
- * @s: an input
- * @accept: an input
+ * _strspn - gets length of a prefix
+ * @s: character s
+ * @accept: character
  *
- * Return: returns an int
+ * Return: returns length
  */
 unsigned int _strspn(char *s, char *accept)
 {
-	return (0);
+	int i;
+
+	i = strspn(s, accept);
+
+	return (i);
 }
